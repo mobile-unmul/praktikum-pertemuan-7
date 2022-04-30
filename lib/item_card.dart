@@ -18,7 +18,7 @@ class ItemCard extends StatelessWidget {
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: Colors.blue[900]!)),
+          border: Border.all(color: Color(0xfff78000))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

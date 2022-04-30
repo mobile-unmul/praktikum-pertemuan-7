@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pertemuan7_crud/item_card.dart';
 
 class MainPage extends StatelessWidget {
   final TextEditingController nameController = TextEditingController();
@@ -8,8 +9,10 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue[900],
-          title: Text('Firestore Demo'),
+          title: Text(
+            'Firestore Demo',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
         backgroundColor: Colors.white,
         body: Stack(
@@ -17,9 +20,8 @@ class MainPage extends StatelessWidget {
             ListView(
               children: [
                 //// VIEW DATA HERE
-                SizedBox(
-                  height: 150,
-                )
+                ///
+                SizedBox(height: 150)
               ],
             ),
             Align(
@@ -63,7 +65,6 @@ class MainPage extends StatelessWidget {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              primary: Colors.blue[900],
                             ),
                             child: Text(
                               'Add Data',
