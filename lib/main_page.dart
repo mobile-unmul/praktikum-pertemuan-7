@@ -20,7 +20,20 @@ class MainPage extends StatelessWidget {
             ListView(
               children: [
                 //// VIEW DATA HERE
-                ///
+                // FutureBuilder<QuerySnapshot>(
+                //   future: users.get(),
+                //   builder: (_, snapshot) {
+                //     return (snapshot.hasData)
+                //         ? Column(
+                //             children: snapshot.data!.docs
+                //                 .map(
+                //                   (e) => ItemCard(e.get('name'), e.get('age')),
+                //                 )
+                //                 .toList(),
+                //           )
+                //         : Text('Loading...');
+                //   },
+                // ),
                 SizedBox(height: 150)
               ],
             ),
@@ -75,6 +88,13 @@ class MainPage extends StatelessWidget {
                             ),
                             onPressed: () {
                               //// ADD DATA HERE
+                              // users.add({
+                              //   'name': nameController.text,
+                              //   'age': int.tryParse(ageController.text) ?? -1,
+                              // });
+
+                              // nameController.text = '';
+                              // ageController.text = '';
                             }),
                       )
                     ],
